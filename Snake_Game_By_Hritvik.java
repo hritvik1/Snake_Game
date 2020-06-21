@@ -854,6 +854,7 @@ class Snake_Game_By_Hritvik
     }
     public static void main(String args[])                      //Main Func() Of Game, Used To Call Functions In Order & Storing Score And Moves In External Files
     {
+        cls();
         try
         {
             i=0;
@@ -887,7 +888,7 @@ class Snake_Game_By_Hritvik
         try
         {
             FileOutputStream fout1 = new FileOutputStream(".snake_high_score.dat");              //.dat Extention Is Used To Encrypt Data So, That No User Can Open That File And Edit It...
-            FileOutputStream fout2 = new FileOutputStream(".snake_least_moves.dat");            //Location Of File Is Also Not Defined For Security Purpose....
+            FileOutputStream fout2 = new FileOutputStream(".snake_least_moves.dat");             //Location Of File Is Also Not Defined For Security Purpose....
             FileWriter fw1 = new FileWriter("snake_player.dat",false);
             BufferedWriter bf1 = new BufferedWriter(fw1);
             if(fruit_eat>high_score)
